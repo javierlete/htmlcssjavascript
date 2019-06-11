@@ -1,10 +1,22 @@
+HTML
+
 https://uniwebsidad.com/libros/xhtml
 https://diveintohtml5.info/
 
-Ejemplos de CSS sobre un solo HTML
+CSS
+
+- Ejemplos de CSS sobre un solo HTML
 http://www.csszengarden.com/
+
 https://uniwebsidad.com/libros/css
 https://uniwebsidad.com/libros/css-avanzado
+
+
+JAVASCRIPT
+
 https://uniwebsidad.com/libros/javascript
 https://uniwebsidad.com/libros/ajax
+
+JQUERY
+
 https://uniwebsidad.com/libros/fundamentos-jquery
