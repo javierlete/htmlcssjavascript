@@ -1,0 +1,142 @@
+<!--
+
+html:5
+
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Segunda página</title>
+</head>
+<body>
+    <h1>Segunda página</h1>
+    
+<!--
+
+ul>li*6{Elemento *}
+
+-->       
+    <ul>
+        <li>Uno</li>
+        <li>Dos</li>
+        <li>Tres</li>
+        <li>Cuatro</li>
+        <li>Cinco</li>
+        <li>Seis</li>
+    </ul>
+    
+    <ol>
+        <li>Uno
+            <ol>
+                <li>Otro</li>
+                <li>Otromás</li>
+            </ol>
+        </li>
+        <li>Dos</li>
+        <li>Tres</li>
+    </ol>
+    
+    <dl>
+        <dt>HTML</dt>
+        <dd>Hyper Text Markup Language</dd>
+        
+        <dt>CSS</dt>
+        <dd>Cascade Style Sheets</dd>
+        
+    </dl>
+    
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3">Ejemplo de tabla</th>
+            </tr>
+            <tr>
+                <th>Nombre</th><th>Email</th><th>Importe</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Javier</td>
+                <td>miemail@email.net</td>
+                <td>1000</td>
+            </tr>
+            <tr>
+                <td>Pepe</td>
+                <td>suemail@email.net</td>
+                <td>500</td>
+            </tr>
+            
+        </tbody>
+        <tfoot>
+            <tr>
+                <th></th>
+                <th>Total:</th>
+                <th>1500</th>
+            </tr>
+        </tfoot>
+    </table> 
+    
+    <form action="#">
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" />
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" />
+        </div>
+        <div>
+            <input type="checkbox"/>
+            <input type="color"/>
+            <input type="date"/>
+            <input type="datetime-local"/>
+            <input type="file"/>
+            <input type="hidden" name="x" value="alsdf"/>
+            <input type="image"/>
+            <input type="month"/>
+            <input type="number" value="1"/>
+            <input type="password"/>
+            <input type="radio" name="cuantogusta" value="mucho"/>
+            <input type="radio" name="cuantogusta" value="poco"/>
+            <input type="range"/>
+            <input type="reset"/>
+            <input type="search"/>
+            <input type="submit" value="Enviar"/>
+            <input type="tel"/>
+            <input type="time"/>
+            <input type="url"/>
+            <input type="week"/>
+        </div>
+        <div>
+            <select name="desplegable">
+                <option>Uno</option>
+                <option value="Dos">Dos</option>
+                <option value="3">Tres</option>
+            </select>
+            
+            <select name="lista" multiple>
+                <option>Uno</option>
+                <option value="Dos">Dos</option>
+                <option value="3">Tres</option>
+            </select>
+            
+            <textarea cols="30" rows="5"></textarea>
+            
+        </div>
+        <div>
+            <button>Aceptar</button>
+        </div>
+    </form>
+    
+    <form action="https://www.google.com/search">
+        <input type="text" name="q"/>
+        <button>Buscar</button>
+    </form>
+    
+    <a href="tel:941231234">941231234</a>
+    
+    <a href="mailto:javier@email.net">javier@email.net</a>
+    <!-- TODO: Seguir aquí mañana -->
+</body>
+</html>
