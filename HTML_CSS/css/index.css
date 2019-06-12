@@ -1,0 +1,74 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+#menu-principal li {
+    list-style: none;
+}
+
+p, pre {
+    margin: 1em;
+}
+
+a {
+    color: rgb(0,42,255); /* #002AFF; */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+pre {
+    background: #EFEFEF;
+    padding: 0 1em;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    box-shadow: 0.5em 0.5em 1em #aaa;
+}
+
+h1 {
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    background: darkgray;
+    -webkit-text-stroke: 1px black;
+    text-shadow: -1px -1px 0em white;
+    transform: rotate(3deg);
+}
+
+#zen-intro {
+    background: lightgray;
+}
+
+.superdestacado {
+    font-size: 1.5em;
+}
+
+h2, h3, h4, h5, h6 {
+    background: black;
+    color: white;
+    padding: 0.5em;
+}
+
+aside a {
+    color: red;
+}
+
+aside li {
+    list-style: none;
+}
+
+aside li:before {
+    content: "{"
+}
+
+aside li:after {
+    content: "}"
+}
+
+aside ul {
+    padding-left: 0;
+}
