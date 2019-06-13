@@ -3,8 +3,50 @@ body {
     margin: 0;
 }
 
-#menu-principal li {
+#menu-principal {
+    top: 0;
+    position: sticky;
+    background: black;
+    z-index: 1000;
+}
+
+#menu-principal > ul {
+    padding-left: 1em;
+    margin: 0;
+}
+
+#menu-principal > ul > li {
     list-style: none;
+    display: inline-block;
+}
+
+#menu-principal > ul > li > ul > li {
+    list-style: none;
+}
+
+#menu-principal > ul > li > ul {
+    display:none;
+}
+
+#menu-principal > ul > li:hover > ul {
+    display: block;
+    position: absolute;
+    top: 1.5em;
+    left: 0px;
+    background: black;
+    padding-left: 1em;
+}
+
+#menu-principal a {
+    display: inline-block;
+    padding: 0.25em;
+    color: white;
+}
+
+#menu-principal a:hover {
+    color: black;
+    background: white;
+    text-decoration: none;
 }
 
 p, pre {
@@ -37,10 +79,13 @@ h1 {
     -webkit-text-stroke: 1px black;
     text-shadow: -1px -1px 0em white;
     transform: rotate(3deg);
+    width: 90%;
+    margin: 1em auto;
 }
 
 #zen-intro {
     background: lightgray;
+    padding-top: 1em;
 }
 
 .superdestacado {
