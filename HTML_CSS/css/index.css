@@ -117,3 +117,22 @@ aside li:after {
 aside ul {
     padding-left: 0;
 }
+
+/* Posicionamiento */
+
+
+@media (min-width: 400px) {
+    main article {
+        float: right;
+        width: 50%;
+    }
+    #zen-requirements {
+        clear:left;
+    }
+}
+
+@media (min-width: 700px) {
+    main article {
+        width: 33.3333333%;
+    }
+}
