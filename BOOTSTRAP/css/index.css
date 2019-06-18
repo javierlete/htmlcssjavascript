@@ -1,8 +1,12 @@
-body > div > footer {
+body > footer {
     background: black;
     color: white;
 }
 
-body > div > footer a {
+body > footer a {
     color: white;
+}
+
+.display-1 {
+    font-weight: 900;
 }
