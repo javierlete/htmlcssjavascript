@@ -29,3 +29,28 @@ switch(mes){
 }
 
 alert('El mes ' + mes + ' tiene ' + dias + ' días');
+
+var n = 1;
+var resultado = '';
+
+while(n <= 10){
+    resultado = resultado + n; //resultado += n;
+    n++;
+}
+
+//alert(resultado);
+
+n = 1;
+
+do{
+    resultado += n;
+    n++;
+}while(n <= 10);
+
+//alert(resultado);
+
+for(var i = 1; i <= 10; i++){
+    resultado += i;
+}
+
+alert(resultado);
