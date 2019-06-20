@@ -39,18 +39,18 @@ function cuandoEnvieFormulario(evento) {
     console.log('nif=', nif);
     
     if (nombre.trim().length === 0) {
-        cuadroTextoNombre.style = 'border: 1px solid red';
+        cuadroTextoNombre.className = 'error'; //.style = 'border: 1px solid red';
         cuadroTextoNombre.focus();
     }
     
     if (nombre === 'JAVIER') {
-        cuadroTextoNombre.style = 'background: lightgreen';
+        cuadroTextoNombre.className = 'javier'; //.style = 'background: lightgreen';
     }
     
     if (!validarLetraNif(nif)) {
-        cuadroTextoNif.style = 'border: 1px solid red';
+        cuadroTextoNif.className = 'error';//.style = 'border: 1px solid red';
     } else {
-        cuadroTextoNif.style = 'border: 1px solid black';
+        cuadroTextoNif.className = ''; //.style = 'border: 1px solid black';
     }
     
     saludo = document.getElementById('saludo');
@@ -65,7 +65,7 @@ function cuandoEnvieFormulario(evento) {
 function cuandoPulsenTeclaEnCuadroDeTextoNombre() {
     'use strict';
     
-    cuadroTextoNombre.style = 'border: 1px solid black';
+    cuadroTextoNombre.className = ''; //.style = 'border: 1px solid black';
     cuadroTextoNombre.value = cuadroTextoNombre.value.toUpperCase();
 }
 
