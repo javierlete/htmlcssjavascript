@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="css/formulario.css" />
+    
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/formulario.js"></script>
+</head>
+<body>
+    <h1>Formulario</h1>
+    
+    <form autocomplete="off">
+        <div>
+            <label for="nombre">Nombre</label>
+            <input id="nombre" pattern="[A-ZÑ 0-9]*"/>
+        </div>
+        <div>
+            <label for="nif">NIF</label>
+            <input id="nif" pattern="[XYZ0-9][0-9]{7}[TRWAGMYFPDXBNJZSQVHLCKE]"/>
+        </div>
+        <div>
+            <button>Aceptar</button>
+        </div>
+    </form>
+    
+    <p id="saludo"></p>
+</body>
+</html>

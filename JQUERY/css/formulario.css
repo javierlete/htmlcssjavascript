@@ -1,0 +1,16 @@
+label {
+    float: left;
+    width: 4em;
+}
+
+input {
+    border: 1px solid black;
+}
+
+input.error {
+    border: 1px solid red;
+}
+
+input.javier {
+    background: lightgreen;
+}
