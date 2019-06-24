@@ -1,0 +1,20 @@
+{
+    "vuelos": [
+        {
+            "id": 1,
+            "aeropuerto_origen": "BIO",
+            "aeropuerto_destino": "MAD",
+            "compania_aerea": "Air France",
+            "fecha_salida": "2018-06-12T19:30",
+            "fecha_llegada": "2018-06-12T22:30"
+        },
+        {
+            "id": 2,
+            "aeropuerto_origen": "MAD",
+            "aeropuerto_destino": "BIO",
+            "compania_aerea": "Iberia",
+            "fecha_salida": "2018-06-13T19:30",
+            "fecha_llegada": "2018-06-13T22:30"
+        }
+    ]
+}
