@@ -23,6 +23,14 @@
       "fecha_salida": "2019-06-25T20:18",
       "fecha_llegada": "2019-06-25T23:59",
       "id": 3
+    },
+    {
+      "aeropuerto_origen": "",
+      "aeropuerto_destino": "BIO",
+      "compania_aerea": "",
+      "fecha_salida": "Invalid date",
+      "fecha_llegada": "T",
+      "id": 4
     }
   ]
 }

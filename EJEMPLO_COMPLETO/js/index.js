@@ -30,7 +30,15 @@ function refrescarVuelos() {
 $(function () {
     'use strict';
     
-    $('button').click(function (e) {
+    $('form').hide();
+    
+    $('#btnAnadir').click(function (e) {
+        e.preventDefault();
+        
+        $('form').show();
+    });
+    
+    $('#btnAceptar').click(function (e) {
         e.preventDefault();
         
         var vuelo = {};
@@ -51,6 +59,8 @@ $(function () {
             console.log(datos, estado, peticion);
             
             refrescarVuelos();
+            
+            $('form').hide();
         });
     });
 
