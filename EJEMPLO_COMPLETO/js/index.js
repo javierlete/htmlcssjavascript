@@ -10,8 +10,6 @@ var url = 'http://localhost:3000/';
 $(function () {
     'use strict';
     
-    $('#fecha_salida').datetimepicker();
-    
     $.getJSON(url + 'vuelos', function (vuelos) {
         $(vuelos).each(function () {
             var pedazos = this.fecha_salida.split('T');
