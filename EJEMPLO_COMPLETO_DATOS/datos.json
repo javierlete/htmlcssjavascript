@@ -9,28 +9,12 @@
       "fecha_llegada": "2018-06-12T22:30"
     },
     {
-      "id": 2,
-      "aeropuerto_origen": "MAD",
-      "aeropuerto_destino": "BIO",
-      "compania_aerea": "Iberia",
-      "fecha_salida": "2018-06-13T19:30",
-      "fecha_llegada": "2018-06-13T22:30"
-    },
-    {
       "aeropuerto_origen": "MAD",
       "aeropuerto_destino": "BIO",
       "compania_aerea": "Iberia",
       "fecha_salida": "2019-06-25T20:18",
       "fecha_llegada": "2019-06-25T23:59",
       "id": 3
-    },
-    {
-      "aeropuerto_origen": "",
-      "aeropuerto_destino": "BIO",
-      "compania_aerea": "",
-      "fecha_salida": "Invalid date",
-      "fecha_llegada": "T",
-      "id": 4
     }
   ]
 }
