@@ -21,10 +21,37 @@ function refrescarVuelos() {
             console.log(pedazos.join('T'));
 
             $('tbody').append(
-                '<tr><td>' + this.id + '</td><td>' + this.aeropuerto_origen + '</td><td>' + this.aeropuerto_destino + '</td><td>' + this.compania_aerea + '</td><td>' + this.fecha_salida + '</td><td>' + this.fecha_llegada + '</td><td><a class="btn btn-primary" href="#">Editar <i class="fas fa-edit"></i></a> <a class="btn btn-danger btnBorrar" href="#" data-id="' + this.id + '">Borrar <i class="far fa-trash-alt"></i></a></tr>'
+                '<tr><td>' + this.id + '</td><td>' + this.aeropuerto_origen + '</td><td>' + this.aeropuerto_destino + '</td><td>' + this.compania_aerea + '</td><td>' + this.fecha_salida + '</td><td>' + this.fecha_llegada + '</td><td><a class="btn btn-primary btnEditar" href="#" data-id="' + this.id + '">Editar <i class="fas fa-edit"></i></a> <a class="btn btn-danger btnBorrar" href="#" data-id="' + this.id + '">Borrar <i class="far fa-trash-alt"></i></a></tr>'
             );
         });
 
+        $('.btnEditar').click(function (e) {
+            e.preventDefault();
+            
+            $.getJSON(url + 'vuelos/' + this.dataset.id, function (vuelo) {
+                
+                console.log(vuelo);
+                
+                $('#aeropuerto_origen').val(vuelo.aeropuerto_origen);
+                $('#aeropuerto_destino').val(vuelo.aeropuerto_destino);
+                $('#compania_aerea').val(vuelo.compania_aerea);
+                $('#fecha_salida').val(
+                    moment(vuelo.fecha_salida, 'YYYY-MM-DDTHH:mm')
+                        .format('DD/MM/YYYY HH:mm')
+                );
+                $('#fecha_llegada_date').val(
+                    moment(vuelo.fecha_llegada, 'YYYY-MM-DDTHH:mm')
+                        .format('YYYY-MM-DD')
+                );
+                $('#fecha_llegada_time').val(
+                    moment(vuelo.fecha_llegada, 'YYYY-MM-DDTHH:mm')
+                        .format('HH:mm')
+                );
+                
+                $('form').show();
+            });
+        });
+        
         $('.btnBorrar').click(function (e) {
             e.preventDefault();
 
@@ -33,11 +60,11 @@ function refrescarVuelos() {
             $.ajax({
                 url: url + 'vuelos/' + this.dataset.id,
                 method: 'DELETE'
-            }).done(function() {
+            }).done(function () {
                 console.log('OK');
                 
                 refrescarVuelos();
-            }).fail(function() {
+            }).fail(function () {
                 console.log('ERROR');
             });
         });
