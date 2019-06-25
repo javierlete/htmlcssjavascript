@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <title>Ejemplo Completo</title>
 
-    <link href="css/fonts.css" rel="stylesheet">
-    
+    <link href="css/fonts.css" rel="stylesheet" />
+    <link href="css/fontawesome-all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/tempusdominus-bootstrap-4.css" />
 
@@ -29,8 +29,8 @@
             <thead>
                 <tr>
                     <th>Id</th>
-                    <th>Aeropuerto Origen</th>
-                    <th>Aeropuerto Destino</th>
+                    <th>Aeropuerto Origen <i class="fas fa-plane-departure"></i></th>
+                    <th>Aeropuerto Destino <i class="fas fa-plane-arrival"></i></th>
                     <th>Compañía Aerea</th>
                     <th>Fecha de Salida</th>
                     <th>Fecha de Llegada</th>
@@ -78,25 +78,9 @@
         <div class="form-group row">
             <label for="fecha_salida" class="col-sm-2 col-form-label">Fecha de Salida</label>
             <div class="col-sm-4">
-                <input type="datetime-local" class="form-control" id="fecha_salida" placeholder="Fecha de salida del vuelo">
-            </div>
-
-            <label for="fecha_llegada" class="col-sm-2 col-form-label">Fecha de Llegada</label>
-            <div class="col-sm-2">
-                <input type="date" class="form-control" id="fecha_llegada_date" placeholder="Fecha de llegada del vuelo">
-            </div>
-            <div class="col-sm-2">
-                <input type="time" class="form-control" id="fecha_llegada_time" placeholder="Fecha de llegada del vuelo">
-            </div>
-
-        </div>
-
-
-        <div class="row">
-            <div class="col-sm-6">
                 <div class="form-group">
                     <div class="input-group date" id="datetimepicker2" data-target-input="nearest">
-                        <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker2" />
+                        <input type="text" id="fecha_salida" class="form-control datetimepicker-input" data-target="#datetimepicker2" />
                         <div class="input-group-append" data-target="#datetimepicker2" data-toggle="datetimepicker">
                             <div class="input-group-text"><i class="fa fa-calendar"></i></div>
                         </div>
@@ -106,11 +90,19 @@
             <script type="text/javascript">
                 $(function() {
                     $('#datetimepicker2').datetimepicker({
-                        locale: 'ru'
+                        locale: 'es'
                     });
                 });
 
             </script>
+            <label for="fecha_llegada" class="col-sm-2 col-form-label">Fecha de Llegada</label>
+            <div class="col-sm-2">
+                <input type="date" class="form-control" id="fecha_llegada_date" placeholder="Fecha de llegada del vuelo">
+            </div>
+            <div class="col-sm-2">
+                <input type="time" class="form-control" id="fecha_llegada_time" placeholder="Fecha de llegada del vuelo">
+            </div>
+
         </div>
 
         <div class="form-group row">

@@ -19,7 +19,7 @@ $(function () {
             console.log(pedazos.join('T'));
             
             $('tbody').append(
-                '<tr><td>' + this.id + '</td><td>' + this.aeropuerto_origen + '</td><td>' + this.aeropuerto_destino + '</td><td>' + this.compania_aerea + '</td><td>' + this.fecha_salida + '</td><td>' + this.fecha_llegada + '</td><td><a class="btn btn-primary" href="#">Editar</a> <a class="btn btn-danger" href="#">Borrar</a></tr>'
+                '<tr><td>' + this.id + '</td><td>' + this.aeropuerto_origen + '</td><td>' + this.aeropuerto_destino + '</td><td>' + this.compania_aerea + '</td><td>' + this.fecha_salida + '</td><td>' + this.fecha_llegada + '</td><td><a class="btn btn-primary" href="#">Editar <i class="fas fa-edit"></i></a> <a class="btn btn-danger" href="#">Borrar <i class="far fa-trash-alt"></i></a></tr>'
             );
         });
     });
