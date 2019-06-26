@@ -1,20 +1,28 @@
 {
   "vuelos": [
     {
-      "id": 1,
       "aeropuerto_origen": "BIO",
       "aeropuerto_destino": "MAD",
-      "compania_aerea": "Air France",
+      "compania_aerea": "Iberia",
       "fecha_salida": "2018-06-12T19:30",
-      "fecha_llegada": "2018-06-12T22:30"
+      "fecha_llegada": "2018-06-12T22:30",
+      "id": 1
     },
     {
       "aeropuerto_origen": "MAD",
       "aeropuerto_destino": "BIO",
-      "compania_aerea": "Iberia",
+      "compania_aerea": "Luftansa",
       "fecha_salida": "2019-06-25T20:18",
       "fecha_llegada": "2019-06-25T23:59",
       "id": 3
+    },
+    {
+      "aeropuerto_origen": "MAD",
+      "aeropuerto_destino": "MAD",
+      "compania_aerea": "Air France",
+      "fecha_salida": "2019-06-28T19:48",
+      "fecha_llegada": "2019-06-27T00:00",
+      "id": 4
     }
   ]
 }

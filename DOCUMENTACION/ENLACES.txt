@@ -32,3 +32,33 @@ https://uniwebsidad.com/libros/fundamentos-jquery
 BOOTSTRAP
 
 https://getbootstrap.com/docs/4.3/getting-started/introduction/
+
+MOMENTJS (gestión de fechas en JavaScript)
+
+https://momentjs.com/
+
+POPPERJS
+
+https://github.com/FezVrasta/popper.js#installation
+
+TEMPUS DOMINUS (Bootstrap 4, control que hace la función de datetime-local)
+
+https://tempusdominus.github.io/bootstrap-4/Usage/
+
+FONT AWESOME (iconos)
+
+https://fontawesome.com/
+
+FONTS DE GOOGLE
+
+https://fonts.google.com/
+
+API DE STARWARS
+
+https://swapi.co/api/
+
+NODEJS (necesario para instalar JSON-SERVER)
+
+https://nodejs.org/es/
+
+npm install -g json-server

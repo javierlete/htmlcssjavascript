@@ -27,11 +27,13 @@ function refrescarVuelos() {
 
         $('.btnEditar').click(function (e) {
             e.preventDefault();
-            
+
             $.getJSON(url + 'vuelos/' + this.dataset.id, function (vuelo) {
-                
+
                 console.log(vuelo);
-                
+
+                $('#id').val(vuelo.id);
+
                 $('#aeropuerto_origen').val(vuelo.aeropuerto_origen);
                 $('#aeropuerto_destino').val(vuelo.aeropuerto_destino);
                 $('#compania_aerea').val(vuelo.compania_aerea);
@@ -47,22 +49,22 @@ function refrescarVuelos() {
                     moment(vuelo.fecha_llegada, 'YYYY-MM-DDTHH:mm')
                         .format('HH:mm')
                 );
-                
+
                 $('form').show();
             });
         });
-        
+
         $('.btnBorrar').click(function (e) {
             e.preventDefault();
 
             console.log('Borrar', this.dataset.id);
-            
+
             $.ajax({
                 url: url + 'vuelos/' + this.dataset.id,
                 method: 'DELETE'
             }).done(function () {
                 console.log('OK');
-                
+
                 refrescarVuelos();
             }).fail(function () {
                 console.log('ERROR');
@@ -79,13 +81,20 @@ $(function () {
     $('#btnAnadir').click(function (e) {
         e.preventDefault();
 
+        $('input, select').val('');
+
+        $('#id').val('0');
+
         $('form').show();
     });
 
     $('#btnAceptar').click(function (e) {
         e.preventDefault();
 
-        var vuelo = {};
+        var vuelo = {},
+            id;
+
+        id = $('#id').val();
 
         vuelo.aeropuerto_origen = $('#aeropuerto_origen').val();
         vuelo.aeropuerto_destino = $('#aeropuerto_destino').val();
@@ -99,13 +108,31 @@ $(function () {
 
         console.log(vuelo);
 
-        $.post(url + 'vuelos', vuelo, function (datos, estado, peticion) {
-            console.log(datos, estado, peticion);
+        id = +id;
 
-            refrescarVuelos();
+        if (id === 0) {
+            $.post(url + 'vuelos', vuelo, function (datos, estado, peticion) {
+                console.log(datos, estado, peticion);
 
-            $('form').hide();
-        });
+                refrescarVuelos();
+
+                $('form').hide();
+            });
+        } else {
+            vuelo.id = id;
+            
+            $.ajax({
+                url: url + 'vuelos/' + id,
+                method: 'PUT',
+                data: vuelo
+            }).done(function (respuesta) {
+                console.log(respuesta);
+                
+                refrescarVuelos();
+            }).fail(function() {
+                alert('HA HABIDO UN ERROR');
+            });
+        }
     });
 
     refrescarVuelos();
