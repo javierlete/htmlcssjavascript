@@ -7,6 +7,14 @@
 
 var url = 'http://localhost:3000/';
 
+function mostrarAlerta(texto, nivel) {
+    'use strict';
+    
+    var alerta = '<div class="alert alert-' + nivel + ' alert-dismissible fade show" role="alert">' + texto + '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>';
+    
+    $('h1').after(alerta);
+}
+
 function refrescarVuelos() {
     'use strict';
 
@@ -28,6 +36,8 @@ function refrescarVuelos() {
         $('.btnEditar').click(function (e) {
             e.preventDefault();
 
+            mostrarAlerta('Editando el registro ' + this.dataset.id, 'info');
+            
             $.getJSON(url + 'vuelos/' + this.dataset.id, function (vuelo) {
 
                 console.log(vuelo);
@@ -66,6 +76,8 @@ function refrescarVuelos() {
                 console.log('OK');
 
                 refrescarVuelos();
+                
+                mostrarAlerta('Vuelo borrado correctamente', 'success');
             }).fail(function () {
                 console.log('ERROR');
             });
@@ -77,6 +89,8 @@ $(function () {
     'use strict';
 
     $('form').hide();
+    
+    mostrarAlerta('Bienvenido a esta aplicación', 'info');
 
     $('#btnAnadir').click(function (e) {
         e.preventDefault();
@@ -129,7 +143,7 @@ $(function () {
                 console.log(respuesta);
                 
                 refrescarVuelos();
-            }).fail(function() {
+            }).fail(function () {
                 alert('HA HABIDO UN ERROR');
             });
         }

@@ -10,14 +10,6 @@
     },
     {
       "aeropuerto_origen": "MAD",
-      "aeropuerto_destino": "BIO",
-      "compania_aerea": "Luftansa",
-      "fecha_salida": "2019-06-25T20:18",
-      "fecha_llegada": "2019-06-25T23:59",
-      "id": 3
-    },
-    {
-      "aeropuerto_origen": "MAD",
       "aeropuerto_destino": "MAD",
       "compania_aerea": "Air France",
       "fecha_salida": "2019-06-28T19:48",
