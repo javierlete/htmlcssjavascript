@@ -6,6 +6,9 @@ HTML
 https://uniwebsidad.com/libros/xhtml
 https://diveintohtml5.info/
 
+- Validador de HTML del W3
+https://validator.w3.org
+
 CSS
 
 - Ejemplos de CSS sobre un solo HTML
@@ -13,6 +16,12 @@ http://www.csszengarden.com/
 
 https://uniwebsidad.com/libros/css
 https://uniwebsidad.com/libros/css-avanzado
+
+- Validador de CSS del W3
+https://jigsaw.w3.org/css-validator/
+
+- CSS Diner
+https://flukeout.github.io/
 
 - FlexBox
 https://flexboxfroggy.com/#es
@@ -28,6 +37,7 @@ https://uniwebsidad.com/libros/ajax
 JQUERY
 
 https://uniwebsidad.com/libros/fundamentos-jquery
+https://jquery.com
 
 BOOTSTRAP
 
@@ -62,3 +72,12 @@ NODEJS (necesario para instalar JSON-SERVER)
 https://nodejs.org/es/
 
 npm install -g json-server
+
+EXTENSIONES DE BRACKETS
+
+Emmet
+Beautify
+HtmlHint
+CSSLint
+(JSLint)
+(ESLint)

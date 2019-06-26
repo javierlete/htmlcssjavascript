@@ -23,7 +23,7 @@
 
 <body class="container-fluid">
     <h1>Ejemplo Completo</h1>
-    
+
     <div class="table-responsive">
         <table class="table table-striped table-bordered table-hover table-sm">
             <thead>
@@ -62,7 +62,7 @@
 
             <label for="aeropuerto_destino" class="col-sm-2 col-form-label">Aeropuerto Destino</label>
             <div class="col-sm-4">
-                <select class="form-control" id="aeropuerto_destino" placeholder="Aeropuerto Destino en formato internacional">
+                <select class="form-control" id="aeropuerto_destino">
                     <option value="BIO">Bilbao</option>
                     <option value="MAD">Madrid Barajas</option>
                 </select>
@@ -88,7 +88,7 @@
                     </div>
                 </div>
             </div>
-            <script type="text/javascript">
+            <script>
                 $(function() {
                     $('#datetimepicker2').datetimepicker({
                         locale: 'es'
@@ -96,12 +96,12 @@
                 });
 
             </script>
-            <label for="fecha_llegada" class="col-sm-2 col-form-label">Fecha de Llegada</label>
+            <label for="fecha_llegada_date" class="col-sm-2 col-form-label">Fecha de Llegada</label>
             <div class="col-sm-5 col-xl-2">
-                <input type="date" class="form-control" id="fecha_llegada_date" placeholder="Fecha de llegada del vuelo">
+                <input type="date" class="form-control" id="fecha_llegada_date">
             </div>
             <div class="col-sm-5 col-xl-2">
-                <input type="time" class="form-control" id="fecha_llegada_time" placeholder="Fecha de llegada del vuelo">
+                <input type="time" class="form-control" id="fecha_llegada_time">
             </div>
 
         </div>

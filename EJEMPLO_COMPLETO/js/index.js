@@ -82,6 +82,8 @@ function refrescarVuelos() {
                 console.log('ERROR');
             });
         });
+    }).fail(function () {
+        mostrarAlerta('No se ha podido cargar la lista de vuelos', 'danger');
     });
 }
 
